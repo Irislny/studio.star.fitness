@@ -1,0 +1,119 @@
+/* Image de fond - URL personnalisée */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    min-height: 100vh;
+    background-image: url('https://www.fitnessgirl.fr/wp-content/uploads/2022/11/bande-de-resistance-977x550.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+/* Overlay rosé pour lisibilité */
+.overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 51, 153, 0.6); /* rose vif et plus présent */
+    z-index: 1;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 1rem 1.5rem 1rem;
+    background: rgba(255,255,255,0.16);
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    color: #c2185b; /* Rose foncé */
+    margin-bottom: 0.2em;
+}
+
+.slogan {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255,255,255,0.14);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(255,51,153,0.10);
+}
+
+.info {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1.5px dashed #fff;
+}
+
+.info h2 {
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #ff47ae 50%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.cta {
+    text-align: center;
+    margin: 2rem 0;
+}
+#contactBtn {
+    background: linear-gradient(90deg, #ff47ae 60%, #fff 100%);
+    color: #fff;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 999px;
+    box-shadow: 0 6px 18px rgba(255,71,174,0.18);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.24s, color 0.17s, transform 0.12s;
+}
+#contactBtn:hover {
+    background: #fff;
+    color: #ff47ae;
+    border: 2px solid #ff47ae;
+    transform: scale(1.06);
+}
+footer {
+    text-align: center;
+    padding: 1.4rem 0 1rem 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    header {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+}
