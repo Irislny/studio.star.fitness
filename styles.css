@@ -15,7 +15,7 @@ body {
 .overlay {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(255, 51, 153, 0.6); /* rose vif et plus présent */
+    background: rgba(255, 51, 153, 0.6); 
     z-index: 1;
 }
 
@@ -39,6 +39,7 @@ header h1 {
     font-weight: 700;
     color: #c2185b; /* Rose foncé */
     margin-bottom: 0.2em;
+    text-transform: uppercase; /* Titre en majuscule */
 }
 
 .slogan {
@@ -65,11 +66,8 @@ main {
 
 .info h2 {
     margin: 0 0 0.5rem 0;
-    color: #fff;
+    color: #c2185b; /* Rose foncé */
     letter-spacing: 1px;
-    background: linear-gradient(90deg, #ff47ae 50%, #fff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 ul {
@@ -82,6 +80,7 @@ ul {
     text-align: center;
     margin: 2rem 0;
 }
+
 #contactBtn {
     background: linear-gradient(90deg, #ff47ae 60%, #fff 100%);
     color: #fff;
@@ -94,12 +93,14 @@ ul {
     font-weight: bold;
     transition: background 0.24s, color 0.17s, transform 0.12s;
 }
+
 #contactBtn:hover {
     background: #fff;
     color: #ff47ae;
     border: 2px solid #ff47ae;
     transform: scale(1.06);
 }
+
 footer {
     text-align: center;
     padding: 1.4rem 0 1rem 0;
